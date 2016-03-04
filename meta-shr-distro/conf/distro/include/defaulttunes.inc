@@ -10,14 +10,14 @@ DEFAULTTUNE_om-gta02 = "arm920t"
 
 DEFAULTTUNE_spitz    = "xscale"
 
-DEFAULTTUNE_om-gta04 = "cortexa8t-neon"
-DEFAULTTUNE_nokia900 = "cortexa8t-neon"
-DEFAULTTUNE_crespo   = "cortexa8t-neon"
-DEFAULTTUNE_tuna     = "cortexa8t-neon"
+DEFAULTTUNE_om-gta04 = "cortexa8thf-neon"
+DEFAULTTUNE_nokia900 = "cortexa8thf-neon"
+DEFAULTTUNE_crespo   = "cortexa8thf-neon"
+DEFAULTTUNE_tuna     = "cortexa8thf-neon"
 
 # or if you don't care about sharing binary feed between armv7a machines, 
 # add this to local.conf after that require line
-# DEFAULTTUNE_tuna = "cortexa9t-neon"
+# DEFAULTTUNE_tuna = "cortexa9thf-neon"
 
 # For meta-shr-distro/recipes-core/meta/distro-feed-configs.bbappend:
 # this is just to prevent opkg installing something from e.g. armv4t feed on armv7a,
@@ -28,7 +28,7 @@ SUPPORTED_EXTRA_ARCHS_om-gta02 ?= "arm920t arm920tt"
 
 SUPPORTED_EXTRA_ARCHS_spitz    ?= "xscalee xscalete"
 
-SUPPORTED_EXTRA_ARCHS_om-gta04 ?= "cortexa8-vfp-neon cortexa8t2-vfp-neon"
-SUPPORTED_EXTRA_ARCHS_nokia900 ?= "cortexa8-vfp-neon cortexa8t2-vfp-neon"
-SUPPORTED_EXTRA_ARCHS_crespo   ?= "cortexa8-vfp-neon cortexa8t2-vfp-neon"
-SUPPORTED_EXTRA_ARCHS_tuna     ?= "cortexa8-vfp-neon cortexa8t2-vfp-neon"
+SUPPORTED_EXTRA_ARCHS_om-gta04 ?= "cortexa8hf-vfp-neon cortexa8t2hf-vfp-neon"
+SUPPORTED_EXTRA_ARCHS_nokia900 ?= "cortexa8hf-vfp-neon cortexa8t2hf-vfp-neon"
+SUPPORTED_EXTRA_ARCHS_crespo   ?= "cortexa8hf-vfp-neon cortexa8t2hf-vfp-neon"
+SUPPORTED_EXTRA_ARCHS_tuna     ?= "cortexa8hf-vfp-neon cortexa8t2hf-vfp-neon"
