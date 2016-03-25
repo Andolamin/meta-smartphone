@@ -1,4 +1,5 @@
 require recipes-kernel/linux/linux.inc
+require recipes-kernel/linux/linux-dtb.inc
 
 KERNEL_RELEASE = "4.4"
 PV = "${KERNEL_RELEASE}+gitr${SRCPV}"
